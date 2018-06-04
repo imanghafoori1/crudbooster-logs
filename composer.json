@@ -1,0 +1,37 @@
+{
+    "name": "imanghafoori/crudbooster-logs",
+    "description": "A plug-in for CrudBooster CMS to add log functionality",
+    "keywords": ["crudbooster", "crudbooster-logs", "crudbooster logs", "crudbooster logs", "crudbooster plugin"],
+    "license": "MIT",
+    "homepage": "https://github.com/imanghafoori1/crudbooster-logs",
+    "authors": [
+        {
+            "name": "Iman Ghafoori",
+            "email": "imanghafoori1@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "crocodicstudio/crudbooster": "dev-master"
+    },
+    "autoload-dev": {
+        "classmap": ["tests/TestCase.php"]
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Imanghafoori\\CrudBoosterLogs\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imanghafoori\\CrudboosterLogs\\CrudBoosterLogsServiceProvider"
+            ]
+        }
+    }
+}
