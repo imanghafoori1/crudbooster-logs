@@ -21,7 +21,7 @@ class CrudBoosterLogsServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/migrations');
         Auth::registerListeners();
         CRUD::registerListeners();
-        app('CbDynamicMenus')->addMenu('CbLogger::log');
+        app('CbDynamicMenus')->addSuperAdminMenu('CbLogger::log');
     }
 
     /**
