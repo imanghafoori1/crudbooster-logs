@@ -2,8 +2,8 @@
 
 namespace Imanghafoori\CrudBoosterLogs;
 
-use crocodicstudio\crudbooster\CBCoreModule\Hooks;
-use crocodicstudio\crudbooster\controllers\CBController;
+use Crocodicstudio\Crudbooster\CBCoreModule\Hooks;
+use Crocodicstudio\Crudbooster\Controllers\CBController;
 
 class AdminLogsController extends CBController
 {
@@ -23,10 +23,24 @@ class AdminLogsController extends CBController
     private function makeColumns()
     {
         $this->col = [
-            ['label' => 'Time Access', 'name' => 'created_at'],
-            ['label' => 'IP Address', 'name' => 'ip_address'],
-            ['label' => 'User', 'name' => 'cms_users_id', 'join' => 'cms_users,name'],
-            ['label' => 'Description', 'name' => 'description'],
+            [
+                'label' => 'Time Access',
+                'name' => 'created_at',
+            ],
+            [
+                'label' => 'IP Address',
+                'name' => 'ip_address',
+            ],
+            [
+                'label' => 'User',
+
+                'name' => 'cms_users_id',
+                'join' => 'cms_users,name',
+            ],
+            [
+                'label' => 'Description',
+                'name' => 'description',
+            ],
         ];
     }
 

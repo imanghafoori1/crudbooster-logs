@@ -2,7 +2,7 @@
 
 namespace Imanghafoori\CrudBoosterLogs\Listeners;
 
-use crocodicstudio\crudbooster\CBCoreModule\CbUser;
+use Crocodicstudio\Crudbooster\CBCoreModule\CbUser;
 use Imanghafoori\CrudBoosterLogs\LogsRepository;
 use Illuminate\Support\Facades\Event;
 
